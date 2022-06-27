@@ -4,11 +4,16 @@ const addBook = document.querySelector('#add-book');
 
 let bookArray = [];
 
-addBook = function(){
-    const bookCollections = {
-        title: bookTitle.value,
-        author: bookAuthor.value
+let bookCollections;
+
+addBook.onclick = function(e){
+    e.preventDefault();
+
+    bookCollections = {
+      title: bookTitle.value,
+      author: bookAuthor.value
     }
+  bookArray.unshift(bookCollections);
 }
 
-bookArray.unshift(bookCollections);
+
