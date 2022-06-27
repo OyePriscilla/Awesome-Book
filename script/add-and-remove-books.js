@@ -16,14 +16,12 @@ const remove = function (addBook) {
   localStorage.removeItem('Book Author', bookAuthor.value);
 };
 function add() {
-    return `
+  return `
     <h4>${bookTitle.value}</h4>
     <h4>${bookAuthor.value}</h4>
     <button onclick = remove(this)>Remove Book</button><hr>
     `;
-    
 }
-
 addBook.onclick = function (e) {
   e.preventDefault();
   const div = document.createElement('div');
