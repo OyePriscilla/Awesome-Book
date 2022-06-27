@@ -15,18 +15,20 @@
           <div>
             <label class="book-title" for="remove-book1">Lorem ipsum</label><br>
             <label class="book-author" for="remove-book1">Testeroo Testyy</label><br>
-            <button class="remove-book" id="remove-book1">Remove Book</button><hr>
+            <button class="remove-book" id="remove-book1" onclick = remove(this)>Remove Book</button><hr>
           </div>
           <div>
             <label class="book-title" for="remove-book2">Second Book</label><br>
             <label class="book-author" for="remove-book2">Testeroo Testyy</label><br>
-            <button class="remove-book" id="remove-book2">Remove Book</button><hr>
+            <button class="remove-book" id="remove-book2" onclick = remove(this)>Remove Book</button><hr>
           </div>
+            
+
           <div>
-            <input type="text" id="book-title" placeholder="Title"><br>
-            <input type="text" id="book-author" placeholder="Authorr"><br>
-          </div>
-          <button id="add-book">Add</button><hr>
+            <input type="text" placeholder="Book Title" id ="book-title"><br><br>
+            <input type="text" placeholder="Book Author" id = "book-author"><br><br>
+            <button id="add-button" >Add Book</button><hr>
+        </div>
         </form>
       </section>
     </main>
