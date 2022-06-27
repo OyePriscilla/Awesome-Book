@@ -1,44 +1,44 @@
 const bookTitle = document.querySelector('#book-title');
 const bookAuthor = document.querySelector('#book-author');
-const addBook = document.querySelector('#add-book');
-const removeBook = document.querySelectorAll('.remove-book');
-/* const bookList = document.querySelector('.book-list'); */
-const bookForm = document.querySelector('.book-form');
-const bookList = document.createElement('div');
-
+const addBook = document.querySelector('#add-button');
 let bookArray = [];
 
-let bookCollections;
-
-addBook.onclick = function(e){
+addBook.onclick = function(e) {
     e.preventDefault();
-
-    bookCollections = {
-      title: bookTitle.value,
-      author: bookAuthor.value
+    console.log('clicked');
+    div = document.createElement('div');
+    div.innerHTML = add();   
+    document.querySelector('form').prepend(div);
+    const bookCollections = {
+        title: bookTitle.value,
+        author: bookAuthor.value
     }
-  bookArray.unshift(bookCollections);
-  console.log(bookArray);
+    
+    bookArray.unshift(bookCollections);    
 
-  
-  bookList.innerHTML = `
-    <input type="text" id="book-title" placeholder="Title" value="${bookCollections.title}"><br>
-    <input type="text" id="book-author" placeholder="Authorr" value="${bookCollections.author}"><br>
-    <button class="remove-book" id="remove-book">Remove Book</button><hr>
-  `;
+    localStorage.setItem('Book Title', bookTitle.value);
+    localStorage.setItem('Book Author', bookAuthor.value);
+    
+};
 
-    console.log(bookList);
-    bookForm.appendChild(bookList);
+function add(){
+    return `
+        <input type="text" placeholder="Book Title" id ="book-title" value = ${JSON.stringify(bookTitle.value)}><br><br>
+          <input type="text" placeholder="Book Author" id = "book-author" value = ${JSON.stringify(bookAuthor.value)}><br><br>
+          <button onclick = remove(this)>Remove Book</button><hr>
+
+    `;    
 }
 
-removeBook.onclick = function(e){
-  e.preventDefault();
-
-  bookCollections = {
-    title: bookTitle.value,
-    author: bookAuthor.value
-  }
-
-  bookArray.pop(bookCollections);
-  console.log(bookArray);
+function remove(addBook){ 
+    const bookCollections = {
+        title: bookTitle.value,
+        author: bookAuthor.value
+    }
+    document.querySelector('form').removeChild(addBook.parentNode);
+     bookArrayPop = bookArray.pop(bookCollections);
+    
+     localStorage.removeItem('Book Title', bookTitle.value);
+     localStorage.removeItem('Book Author', bookAuthor.value);
+    
 }
