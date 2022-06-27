@@ -16,11 +16,12 @@ const remove = function (addBook) {
   localStorage.removeItem('Book Author', bookAuthor.value);
 };
 function add() {
-  return `
-        <input type="text" placeholder="Book Title" id ="book-title" value = ${JSON.stringify(bookTitle.value)}><br><br>
-  <input type="text" placeholder="Book Author" id = "book-author" value = ${JSON.stringify(bookAuthor.value)}><br><br>
-          <button onclick = remove(this)>Remove Book</button><hr>
+    return `
+    <h4>${bookTitle.value}</h4>
+    <h4>${bookAuthor.value}</h4>
+    <button onclick = remove(this)>Remove Book</button><hr>
     `;
+    
 }
 
 addBook.onclick = function (e) {
