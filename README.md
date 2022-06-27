@@ -61,7 +61,7 @@ $ cd awesome-books
 
 ## Collaborators
 
-> The collaboration was throigh remote pair-programming
+> The collaboration was through remote pair-programming
 
 👤 **Priscilla Oyebade** | GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
 
