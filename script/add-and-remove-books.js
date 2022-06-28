@@ -10,7 +10,7 @@ const remove = function (addBook) {
     title: bookTitle.value,
     author: bookAuthor.value,
   };
-  document.querySelector('form').removeChild(addBook.parentNode);
+  document.querySelector('.book-form').removeChild(addBook.parentNode);
   bookArray.pop(bookCollections);
   localStorage.removeItem('Book Title', bookTitle.value);
   localStorage.removeItem('Book Author', bookAuthor.value);
