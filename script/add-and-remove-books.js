@@ -5,7 +5,7 @@ const addBook = document.querySelector('#add-button');
 const bookArray = [];
 
 // eslint-disable-next-line no-unused-vars
-const remove = function (addBook) {
+function remove(addBook) {
   const bookCollections = {
     title: bookTitle.value,
     author: bookAuthor.value,
@@ -17,8 +17,7 @@ const remove = function (addBook) {
 };
 function add() {
   return `
-    <h4>${bookTitle.value}</h4>
-    <h4>${bookAuthor.value}</h4>
+    <h4>${JSON.stringify(bookTitle.value)} by ${bookAuthor.value} </h4>
     <button onclick = remove(this)>Remove Book</button><hr>
     `;
 }
@@ -36,3 +35,10 @@ addBook.onclick = function (e) {
   localStorage.setItem('Book Title', bookTitle.value);
   localStorage.setItem('Book Author', bookAuthor.value);
 };
+
+class Booktitleandauthor {
+  constructor (title, author) {
+    this.title = title;
+    this.author = author;
+  }
+}
