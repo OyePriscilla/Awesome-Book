@@ -1,5 +1,5 @@
-const bookTitle = document.querySelector('#book-title');
-const bookAuthor = document.querySelector('#book-author');
+const bookTitle = document.querySelector('#book-title').value;
+const bookAuthor = document.querySelector('#book-author').value;
 const addBook = document.querySelector('#add-button');
 
 
@@ -23,7 +23,7 @@ let bookCollections;
 
 // };
 
-class Booktitleandauthor {
+class Book {
   constructor (bookTitle, bookAuthor) {
     this.bookTitle = bookTitle;
     this.bookAuthor = bookAuthor;
@@ -48,9 +48,9 @@ class Booktitleandauthor {
   }
 }
 
-const addBookTA = new Booktitleandauthor (bookTitle.value, bookAuthor.value);
+const addBookTA = new Book (bookTitle.value, bookAuthor.value);
 
-console.log(addBookTA);
+console.log(bookTitle);
 
 addBookTA.add();
 
