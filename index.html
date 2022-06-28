@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
   </head>
-  
+
   <body>
     <main>
       <section class="section-1">
-        <h1 class="title">Awesome Books</h1>
+        <h2 class="title">Awesome Books</h2>
         <form class="book-form">
           <div>
             <h4>Lorem ipsum</h4>
@@ -22,7 +22,7 @@
             <h4>Testeroo Testyy</h4>
             <button class="remove-book" onclick = remove(this)>Remove Book</button><hr>
           </div>
-            
+
 
           <div>
             <input type="text" placeholder="Book Title" id ="book-title"><br><br>
@@ -30,6 +30,18 @@
             <button id="add-button" >Add Book</button><hr>
         </div>
         </form>
+      </section>
+      <section id="list-book">
+        <h2>All Awesome Books</h2>
+        <form class="book-form-two" >
+
+        </form>
+        <div>
+          <h2>Add a new Book</h2>
+          <input type="text" placeholder="Book Title" id ="book-title-two"><br><br>
+          <input type="text" placeholder="Book Author" id = "book-author-two"><br><br>
+          <button id="add-button-two" >Add Book</button><hr>
+      </div>
       </section>
     </main>
     <script src="./script/add-and-remove-books.js"></script>
