@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
   </head>
 
@@ -22,21 +22,26 @@
             <h4>Testeroo Testyy</h4>
             <button class="remove-book" onclick = remove(this)>Remove Book</button><hr>
           </div> -->
-
         </form>
       </section>
       <section id="list-book">
         <h2>All Awesome Books</h2>
-        <form class="book-form-two" >
-
-        </form>
-
+        <form class="book-form-two"></form>
       </section>
       <div>
-        <input type="text" placeholder="Book Title" id ="book-title"><br><br>
-        <input type="text" placeholder="Book Author" id = "book-author"><br><br>
-        <button id="add-button" >Add Book</button><hr>
-    </div>
+        <input
+          type="text"
+          placeholder="Book Title"
+          id="book-title"
+        /><br /><br />
+        <input
+          type="text"
+          placeholder="Book Author"
+          id="book-author"
+        /><br /><br />
+        <button onclick = "add()" id ="add-button">Add Book</button>
+        <hr />
+      </div>
     </main>
     <script src="./script/add-and-remove-books.js"></script>
   </body>
