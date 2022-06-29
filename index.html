@@ -5,44 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
 
   <body>
     <main>
       <section class="section-1">
-        <h2 class="title">Awesome Books</h2>
-        <form class="book-form">
-          <!-- <div>
-            <h4>Lorem ipsum</h4>
-            <h4>Testeroo Testyy</h4>
-            <button class="remove-book" onclick = remove(this)>Remove Book</button><hr>
-          </div>
-          <div>
-            <h4>Second Book</h4>
-            <h4>Testeroo Testyy</h4>
-            <button class="remove-book" onclick = remove(this)>Remove Book</button><hr>
-          </div> -->
-        </form>
+        <h2 class="header-title">All Awesome Books</h2>
+        <div id="book-div">
+
+        </div>
       </section>
-      <section id="list-book">
-        <h2>All Awesome Books</h2>
-        <form class="book-form-two"></form>
-      </section>
-      <div>
+    <div class="form-div-center">
+      <form class="form-book">
+        <h2>Add A New Book</h2>
         <input
           type="text"
-          placeholder="Book Title"
-          id="book-title"
+          placeholder="Title"
+          id="title"
         /><br /><br />
         <input
           type="text"
-          placeholder="Book Author"
-          id="book-author"
+          placeholder="Author"
+          id="author"
         /><br /><br />
-        <button onclick = "add()" id ="add-button">Add Book</button>
-        <hr />
-      </div>
+        <button id ="add-button">Add Book</button>
+      </form>
+    </div>
     </main>
-    <script src="./script/add-and-remove-books.js"></script>
+    <script src="./script/add-and-remove-books.js" defer></script>
   </body>
 </html>
