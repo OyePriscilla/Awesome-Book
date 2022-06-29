@@ -27,8 +27,14 @@
   background-color: #fff;
 }
 
-#title #author {
-  width: 200px;
+#title {
+  width: 250px;
+  padding: 5px;
+  border: 2.5px solid;
+}
+
+#author {
+  width: 250px;
   padding: 5px;
   border: 2.5px solid;
 }
@@ -44,7 +50,7 @@
   padding: 2.5px;
   box-shadow: 3px 3px;
   background-color: #fff;
-  margin-left: 140px;
+  margin-left: 185px;
 }
 
 .header-title {
