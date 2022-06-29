@@ -1,90 +1,54 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Awesome Books
-
-> This is an Awesome Books web page where a user can add or remove books from the site. It also displays a list of the books that are added into the collection. This is a continuous project where each milestone is/are some new feature(s) added to it.
+# Awesome Book Project
+This Project is created purposely to dynamically add and remove books from the User Interface and the local storage. It is one of the mandatory projects for every student in Microverse. It is built with pure JavaScript Classes and Methods.
 
 ## Built With
-
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- Following a Medium fidelity wireframe
-
-## Preview
-
-![Website preview](images/preview.png)
-
-## Live Demo
-
-[Live Demo Link](https://raw.githack.com/chelmerrox/awesome-books/main/index.html)
+* VsCode
+* HTML
+* CSS
+* JS
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+Prerequisites
+* Text editor
+* GitHub
+* Git
 
-### Prerequisites
+Clone this repository on to your local PC
 
-- HTML5 & CSS3 
-- JavaScript
-- VSCode (or any other text editor)
-- Git
-- GitHub
-- Command line/Terminal
+* Click on the Code green button
+* By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
+* In your local PC, open your terminal in the folder you would like to clone the repository into
+* Clone the repository with the command: git clone (copied link); like so: https://github.com/OyePriscilla/Awesome-Book
+* After the clone, type in the command cd Awesome-Book to access the directory on the terminal.
 
-### Setup
+## Setup
 
-From the command line, do the following steps below:
+## Install
 
-1. Clone the projects' repository into your machine.
+## Usage
 
-```bash
-# Clone this repository
-$ git clone git@github.com:chelmerrox/awesome-books.git
+## Run tests
 
-```
-2. Change directory/Go into the repository with the command below.
-
-```bash
-$ cd awesome-books
-
-```
+## Deployment
+Access the online version of this project through this link [PriscillaPortfolio](https://oyepriscilla.github.io/Awesome-Book)
 
 ## Author
+👤 **Author**
+👤 **Oyebade Prisicilla**
 
-👤 **Losalini Rokocakau**
+- GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+- Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+- LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
 
-- GitHub: [@chelmerrox](https://github.com/chelmerrox)
-- Twitter: [@chelmerrox](https://twitter.com/chelmerrox)
-- LinkedIn: [Losalini Rokocakau](https://linkedin.com/in/losalini-rokocakau)
-
-## Collaborators
-
-> The collaboration was through remote pair-programming
-
-👤 **Priscilla Oyebade** | GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
-
-## 🤝 Contributing
-
+## Contibution
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/chelmerrox/awesome-books/issues).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
+Feel free to check the [issues page](../../issues/).
 
 ## Acknowledgments
+All the Glory ascribed to God.
+Hat tip to the person that reviewed my work! Thanks alot.
 
-- Our God & families
-- Microverse
-- Coding & Learning Partners: 
-  1. [Priscilla Oyebade](https://github.com/OyePriscilla) 
-- Morning Session Teams
-- Stand-Up Teams
-- Microverse TSEs
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+## License
+This project is MIT licensed.
