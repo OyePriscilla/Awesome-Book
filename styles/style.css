@@ -1,3 +1,52 @@
-* {
-  margin: 0;
+#book-div {
+  margin: 0 auto;
+  border: 3px solid;
+}
+
+.book-dynamic {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.book-dynamic:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.title-author {
+  width: 95%;
+  float: left;
+}
+
+.remove-button {
+  width: 70px;
+  float: right;
+  padding: 5px;
+  box-shadow: 3px 3px;
+  background-color: #fff;
+}
+
+#title #author {
+  width: 200px;
+  padding: 5px;
+  border: 2.5px solid;
+}
+
+.form-div-center {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#add-button {
+  width: 70px;
+  padding: 2.5px;
+  box-shadow: 3px 3px;
+  background-color: #fff;
+  margin-left: 140px;
+}
+
+.header-title {
+  text-align: center;
 }
