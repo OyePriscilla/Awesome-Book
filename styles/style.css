@@ -1,5 +1,46 @@
+.border-class {
+  border: 3px solid #000;
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 36px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.book-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-ul li {
+  padding-right: 10px;
+  list-style: none;
+  border-right: 2px solid #000;
+  line-height: 2.5;
+  cursor: pointer;
+}
+
+.book-ul li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.book-ul li a {
+  font-size: 20px;
+  font-weight: 900;
+}
+
 #book-div {
-  margin: 0 auto;
+  margin: 0 20px;
   border: 3px solid;
 }
 
@@ -25,6 +66,7 @@
   padding: 5px;
   box-shadow: 3px 3px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 #title {
@@ -45,14 +87,60 @@
   margin-top: 60px;
 }
 
+.header-book {
+  margin-top: 60px;
+}
+
 #add-button {
   width: 70px;
   padding: 2.5px;
   box-shadow: 3px 3px;
   background-color: #fff;
   margin-left: 185px;
+  cursor: pointer;
 }
 
 .header-title {
   text-align: center;
+}
+
+.contact-info {
+  width: 40%;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.h2-size {
+  font-size: 36px;
+  text-align: center;
+}
+
+.contact-info ul {
+  text-align: left;
+  margin-left: 10px;
+}
+
+footer {
+  padding-left: 20px;
+  font-size: 26px;
+}
+
+.active {
+  color: rgb(56, 110, 180);
+  border-bottom: 2px solid rgb(56, 110, 180);
+}
+
+.hide {
+  display: none;
+}
+
+.marg-bottom {
+  margin-bottom: 140px;
+}
+
+.date {
+  display: block;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 18px;
 }
